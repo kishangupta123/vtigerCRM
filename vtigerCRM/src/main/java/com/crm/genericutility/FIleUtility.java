@@ -9,7 +9,7 @@ import java.util.Properties;
  */
 public class FIleUtility {
 	/**
-	 * This method is used to read data from property file.
+	 * This method is used to read data from properties file.
 	 * This method taskes key as a parameter and returns value.
 	 * @param key
 	 * @return

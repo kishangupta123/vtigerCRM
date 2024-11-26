@@ -114,6 +114,5 @@ public class BaseClass {
 	@AfterSuite
 	public void reportBackUp() {
 		extentReports.flush();
-
 	}
 }

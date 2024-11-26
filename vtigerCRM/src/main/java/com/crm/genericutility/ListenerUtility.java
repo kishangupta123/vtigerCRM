@@ -11,6 +11,9 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.Status;
 
+/**
+ * This method override onTestStart and onTestFailure and generates result accordingly
+ */
 public class ListenerUtility extends BaseClass implements ITestListener {
 	@Override
 	public void onTestStart(ITestResult result) {

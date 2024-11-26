@@ -28,6 +28,7 @@ public class WebDriverUtility {
 	/**
 	 * Made Webdriver and class public so that it can be used throughout the project
 	 */
+
 	public WebDriver driver;
 	public Actions actions;
 	public Select select;
@@ -144,7 +145,8 @@ public class WebDriverUtility {
 
 	/**
 	 * This method will perform mouse hover action on the particular web element
-	 * @param driver2 
+	 * 
+	 * @param driver2
 	 * 
 	 * @param element
 	 */
