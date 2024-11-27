@@ -81,7 +81,7 @@ public class BaseClass {
 			Reporter.log("Invlaid browser required");
 		}
 
-		wutils.maximizeWindow();
+		driver.manage().window().maximize();
 		sdriver = driver;
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
