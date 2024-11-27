@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CreateNewContactsPage{
+import com.crm.genericutility.WebDriverUtility;
+
+public class CreateNewContactsPage extends WebDriverUtility{
 	
 	@FindBy(name = "salutationtype")
 	private WebElement prefixDropDown;
@@ -210,5 +212,17 @@ public class CreateNewContactsPage{
 
 	public WebElement getSaveButton() {
 		return saveButton;
+	}
+	
+	
+	public void createNewContactsWithDropDown(String LASTNAME, String LEADSOURCE, String PREFIX)
+	{
+		lastNameTextBox.sendKeys(LASTNAME);
+		
+		handleDropDownByValue(leadsourceDropDown, LEADSOURCE);
+		
+		handleDropDownByValue(prefixDropDown, PREFIX);
+		
+		saveButton.click();
 	}
 }
