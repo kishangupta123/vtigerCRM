@@ -5,7 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CreateOrganizationPage {
+import com.crm.genericutility.WebDriverUtility;
+
+public class CreateNewOrganizationPage extends WebDriverUtility {
 
 	@FindBy(xpath = "//input[@name='accountname']")
 	private WebElement organizationName;
@@ -106,7 +108,7 @@ public class CreateOrganizationPage {
 	@FindBy(xpath = "(//input[contains(@value,'Cancel')])[2]")
 	private WebElement cancelButton;
 	
-	public CreateOrganizationPage(WebDriver driver) {
+	public CreateNewOrganizationPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 
@@ -339,5 +341,14 @@ public class CreateOrganizationPage {
 	 */
 	public WebElement getCancelButton() {
 		return cancelButton;
+	}
+	
+	public void createNewOrganizationsWithDropDown(String ORGANIZATIONNAME, String INDUSTRY, String TYPE, String RATING)
+	{
+		organizationName.sendKeys(ORGANIZATIONNAME);
+		handleDropDownByValue(industryDropDown, INDUSTRY);
+		handleDropDownByValue(typeDropDown, TYPE);
+		handleDropDownByValue(ratingDropDown, RATING);		
+		saveButton.click();
 	}
 }

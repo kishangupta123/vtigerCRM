@@ -17,13 +17,13 @@ import com.crm.objectRepositiory.CreateNewContactsPage;
 import com.crm.objectRepositiory.HomePage;
 
 @Listeners(ListenerUtility.class)
-public class TC_Contacts_01 extends BaseClass{
+public class TC_Contacts_01_Test extends BaseClass{
 	/**
 	 * 
 	 * @throws EncryptedDocumentException
 	 * @throws IOException
 	 */
-	@Test
+	@Test(groups = "smoke")
 	public void createContact() throws EncryptedDocumentException, IOException {
 		// created object for home page
 		homepage = new HomePage(driver);

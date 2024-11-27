@@ -1,4 +1,4 @@
-package com.crm.contacts;
+package com.crm.organisation;
 
 import java.io.IOException;
 
@@ -13,27 +13,28 @@ import com.crm.genericutility.ListenerUtility;
 import com.crm.objectRepositiory.HomePage;
 
 @Listeners(ListenerUtility.class)
-public class ClickOnContactLink extends BaseClass {
-
+public class ClickOnOrganizationLinkTest extends BaseClass {
+	
 	/**
+	 * 
 	 * @throws EncryptedDocumentException
 	 * @throws IOException
 	 */
-	@Test()
-	public void clickonLink() throws EncryptedDocumentException, IOException {
+
+	@Test(groups = "smoke")
+	public void clickOnOrganizationLink() throws EncryptedDocumentException, IOException {
 		// Created object for homepage
 		homepage = new HomePage(driver);
 		// fetched data from excel sheet and stored it in a variable named expectedTitle
-		String expectedTitle = eutils.getStringDataFromExcel("Sheet1", 1, 0);
-
-		// clicked on contact link
-		homepage.getContactsLink().click();
-		test.log(Status.PASS, "Clicked on contact link");
-
-		// adding assert condition to check whether fetched and expected title both are
-		// equal or not.
-		Assert.assertEquals(driver.getTitle(), expectedTitle, "Contact Link not displayed");
+		String expectedTitle = eutils.getStringDataFromExcel("Sheet1", 2, 0);
+		
+		// clicked on organization link
+		homepage.getOrganizationsLink().click();
+		test.log(Status.PASS, "Clicked on organization link");
+		
+		// adding assert condition to check whether fetched and expected title both are equal or not.
+		Assert.assertEquals(driver.getTitle(), expectedTitle , "Organizations page not displayed...");
 		// if passed the same message will be displayed in the extent report.
-		test.log(Status.PASS, "Contacts page displayed");
+		test.log(Status.PASS, "Organizations page displayed");
 	}
 }

@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.contacts.TC_Contacts_05">
+      <class name="com.crm.contacts.TC_Contacts_004">
         <methods>
           <include name="reportConfig"/>
           <include name="reportBackUp"/>
+          <include name="handleChildWindow"/>
           <include name="launchBrowser"/>
           <include name="closeBrowser"/>
           <include name="logout"/>
           <include name="login"/>
-          <include name="createNewContactWithDropDown"/>
         </methods>
-      </class> <!-- com.crm.contacts.TC_Contacts_05 -->
+      </class> <!-- com.crm.contacts.TC_Contacts_004 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

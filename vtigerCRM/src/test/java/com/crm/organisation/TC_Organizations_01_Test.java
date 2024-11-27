@@ -11,20 +11,20 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 import com.crm.genericutility.BaseClass;
 import com.crm.genericutility.ListenerUtility;
-import com.crm.objectRepositiory.CreateOrganizationPage;
+import com.crm.objectRepositiory.CreateNewOrganizationPage;
 import com.crm.objectRepositiory.HomePage;
 import com.crm.objectRepositiory.OrganizationInfoPage;
 import com.crm.objectRepositiory.OrganizationPage;
 
 @Listeners(ListenerUtility.class)
-public class TC_Organizations_01 extends BaseClass {
+public class TC_Organizations_01_Test extends BaseClass {
 	/**
 	 * 
 	 * @throws EncryptedDocumentException
 	 * @throws IOException
 	 */
 		
-	@Test
+	@Test(groups = "smoke")
 	public void createOrganization() throws EncryptedDocumentException, IOException {
 		// created object for home page
 		homepage = new HomePage(driver);
@@ -40,9 +40,11 @@ public class TC_Organizations_01 extends BaseClass {
 		test.log(Status.PASS, "Clicked on new Organizations");
 		
 		// created on object for newOrganization page
-		createorganizationpage = new CreateOrganizationPage(driver);
+		createorganizationpage = new CreateNewOrganizationPage(driver);
+		// checking if actual page is displayed or not
+		Assert.assertTrue(createorganizationpage.getOrganizationName().isDisplayed(), "Create organization page is not displayed");
 		// fetched data from excel file and stored in a local variable name
-		String orgnaizationName = eutils.getStringDataFromExcel("OrganizationTestData", 1, 3);
+		String orgnaizationName = eutils.getStringDataFromExcel("OrganizationTestData", 1, 3) + jutils.getRandomNumber();
 		// in the lastname textfield sent the desired data
 		createorganizationpage.getOrganizationName().sendKeys(orgnaizationName);
 		// clicked on save button
@@ -54,7 +56,7 @@ public class TC_Organizations_01 extends BaseClass {
 		// captured organizationHeader in string format
 		String organiztionHeader = organizationinfo.getOrganizationHeaderText().getText();
 		// verifying if expected and actual output is same or not
-		Assert.assertTrue(organiztionHeader.contains(orgnaizationName), "Organization name containsdesired name");
+		Assert.assertTrue(organiztionHeader.contains(orgnaizationName), "Organization name contains desired name");
 		Reporter.log("Organization page created");
 	}
 }
