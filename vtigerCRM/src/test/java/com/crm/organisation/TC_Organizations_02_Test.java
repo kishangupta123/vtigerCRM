@@ -34,7 +34,7 @@ public class TC_Organizations_02_Test extends BaseClass {
 		test.log(Status.PASS, "Clicked on create Organization lookup icon");
 		
 		createorganizationpage = new CreateNewOrganizationPage(driver);
-		createorganizationpage.createNewOrganizationsWithDropDown(organizationName, industry, type, rating);
+		createorganizationpage.createNewOrganizationsWithDropDown(organizationName + jutils.getRandomNumber(), industry, type, rating);
 		test.log(Status.PASS, "Organiaztions with dropdown list have been created");
 	
 		organizationinfo = new OrganizationInfoPage(driver);
