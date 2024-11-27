@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
-import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -16,8 +15,17 @@ import com.crm.objectRepositiory.ContactsPage;
 import com.crm.objectRepositiory.CreateNewContactsPage;
 import com.crm.objectRepositiory.HomePage;
 
+/**
+ * @author Kishan Kumar Gupta 
+ * 
+ * This program is for checking if the contacts link
+ *         is working or not i.e. when clicked on the 'Contacts' link. Respected
+ *         page should display and the contactstextfield should accept data and
+ *         later verify if it has been created with same provided name or not.
+ */
+
 @Listeners(ListenerUtility.class)
-public class TC_Contacts_01_Test extends BaseClass{
+public class TC_Contacts_01_Test extends BaseClass {
 	/**
 	 * 
 	 * @throws EncryptedDocumentException
@@ -31,13 +39,13 @@ public class TC_Contacts_01_Test extends BaseClass{
 		homepage.getContactsLink().click();
 		// The same message will be printed on extentReports
 		test.log(Status.PASS, "Clicked on contacts link");
-		
-		// created an object for Contact page 
+
+		// created an object for Contact page
 		contactpage = new ContactsPage(driver);
-		// clicked on CreateContact icon 
+		// clicked on CreateContact icon
 		contactpage.getCreateContactLookUpImage().click();
 		test.log(Status.PASS, "Clicked on create new Contacts...");
-		
+
 		// created on object for newcontact page
 		newcontact = new CreateNewContactsPage(driver);
 		// fetched data from excel file and stored in a local variable name
@@ -47,7 +55,7 @@ public class TC_Contacts_01_Test extends BaseClass{
 		// clicked on save button
 		newcontact.getSaveButton().click();
 		test.log(Status.PASS, "Clicked on save button");
-		
+
 		// created an object for contactinfo page
 		contactinfo = new ContactInfoPage(driver);
 		// captured contactHeader in string format

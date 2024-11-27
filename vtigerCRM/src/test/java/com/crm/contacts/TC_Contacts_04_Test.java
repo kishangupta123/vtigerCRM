@@ -19,6 +19,13 @@ import com.crm.objectRepositiory.HomePage;
 
 @Listeners(ListenerUtility.class)
 
+/**
+ * The main objective is to create a Test Script to make sure that if we are
+ * able to control the child window popup or not by using 'driver.switchTo()',
+ * after creating the method and filling the data and clicking on save button we
+ * will check if it is created or not.
+ */
+
 public class TC_Contacts_04_Test extends BaseClass {
 	@Test
 	public void handleChildWindow() throws EncryptedDocumentException, IOException {
@@ -26,15 +33,23 @@ public class TC_Contacts_04_Test extends BaseClass {
 		String organizationName = eutils.getStringDataFromExcel("ContactsTestData", 26, 3);
 		String reportTo = eutils.getStringDataFromExcel("ContactsTestData", 27, 3);
 
+		// Created an instance for HOMEPAGE
 		homepage = new HomePage(driver);
+		// Clicked on the contact link 
 		homepage.getContactsLink().click();
+		// Message to be printed on the extent report
 		test.log(Status.PASS, "Clicked on contact link");
 
+		// Created an instance for CONTACTPAGE
 		contactpage = new ContactsPage(driver);
+		// Navigating to Create New Contact page...
+		// Clicked on 'Create Contact' link.
 		contactpage.getCreateContactLookUpImage().click();
 		test.log(Status.PASS, "Clicked on create contact link");
 
+		// CreateNewContactsPage object created.
 		newcontact = new CreateNewContactsPage(driver);
+		// sending data to 'Last Name' text field
 		newcontact.getLastNameTextBox().sendKeys(lastName);
 		// Get parent Window Handle
 		String parentWindowHandle = driver.getWindowHandle();
@@ -60,10 +75,10 @@ public class TC_Contacts_04_Test extends BaseClass {
 		test.log(Status.PASS, "Switched back to parent handle");
 
 		newcontact.getSaveButton().click();
-		
+
 		String organizationname = ch.getOrgName().getText();
 		Assert.assertNotNull(organizationname);
-		
+
 		test.log(Status.PASS, "Contact is creatred with organization page " + organizationname);
 
 		// created an object for contactinfo page

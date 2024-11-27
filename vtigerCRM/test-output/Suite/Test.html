@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 28 00:38:35 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>240 seconds (240684 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.crm.contacts.TC_Contacts_04_Test.handleChildWindow()'><b>handleChildWindow</b><br>Test class: com.crm.contacts.TC_Contacts_04_Test</td>
+<td></td>
+<td>19</td>
+<td>com.crm.contacts.TC_Contacts_04_Test@5dda768f</td></tr>
+<tr>
+<td title='com.crm.organisation.TC_Organizations_01_Test.createOrganization()'><b>createOrganization</b><br>Test class: com.crm.organisation.TC_Organizations_01_Test<br/>
+<a href="#Output-1935751909" onClick='toggleBox("Output-1935751909", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1935751909" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1935751909">
+Organization page created<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>com.crm.organisation.TC_Organizations_01_Test@49438269</td></tr>
+<tr>
+<td title='com.crm.contacts.TC_Contacts_02_Test.createNewAccountWithStringDetails()'><b>createNewAccountWithStringDetails</b><br>Test class: com.crm.contacts.TC_Contacts_02_Test</td>
+<td></td>
+<td>19</td>
+<td>com.crm.contacts.TC_Contacts_02_Test@1c1bbc4e</td></tr>
+<tr>
+<td title='com.crm.contacts.TC_Contacts_05_Test.createNewContactWithDropDown()'><b>createNewContactWithDropDown</b><br>Test class: com.crm.contacts.TC_Contacts_05_Test<br/>
+<a href="#Output-710589756" onClick='toggleBox("Output-710589756", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-710589756" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-710589756">
+Clicked on Create Contact Look up icon<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>com.crm.contacts.TC_Contacts_05_Test@fbd1f6</td></tr>
+<tr>
+<td title='com.crm.contacts.ClickOnContactLinkTest.clickonLink()'><b>clickonLink</b><br>Test class: com.crm.contacts.ClickOnContactLinkTest</td>
+<td></td>
+<td>8</td>
+<td>com.crm.contacts.ClickOnContactLinkTest@7a8c8dcf</td></tr>
+<tr>
+<td title='com.crm.contacts.TC_Contacts_01_Test.createContact()'><b>createContact</b><br>Test class: com.crm.contacts.TC_Contacts_01_Test</td>
+<td></td>
+<td>17</td>
+<td>com.crm.contacts.TC_Contacts_01_Test@55fe41ea</td></tr>
+<tr>
+<td title='com.crm.organisation.TC_Organizations_02_Test.createNewOrganizationWithDropDown()'><b>createNewOrganizationWithDropDown</b><br>Test class: com.crm.organisation.TC_Organizations_02_Test</td>
+<td></td>
+<td>18</td>
+<td>com.crm.organisation.TC_Organizations_02_Test@ba2f4ec</td></tr>
+<tr>
+<td title='com.crm.contacts.TC_Contacts_03_Test.createNewContactWithNumericData()'><b>createNewContactWithNumericData</b><br>Test class: com.crm.contacts.TC_Contacts_03_Test</td>
+<td></td>
+<td>17</td>
+<td>com.crm.contacts.TC_Contacts_03_Test@4b2bac3f</td></tr>
+<tr>
+<td title='com.crm.organisation.ClickOnOrganizationLinkTest.clickOnOrganizationLink()'><b>clickOnOrganizationLink</b><br>Test class: com.crm.organisation.ClickOnOrganizationLinkTest</td>
+<td></td>
+<td>6</td>
+<td>com.crm.organisation.ClickOnOrganizationLinkTest@1ce24091</td></tr>
+</table><p>
+</body>
+</html>

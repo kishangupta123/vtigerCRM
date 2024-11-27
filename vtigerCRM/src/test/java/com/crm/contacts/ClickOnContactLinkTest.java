@@ -12,6 +12,12 @@ import com.crm.genericutility.BaseClass;
 import com.crm.genericutility.ListenerUtility;
 import com.crm.objectRepositiory.HomePage;
 
+/**
+ * @author Kishan Kumar Gupta This program is for checking if the contacts link
+ *         is working or not i.e. when clicked on the 'Contacts' link. 
+ *         Respected page should display.
+ */
+
 @Listeners(ListenerUtility.class)
 public class ClickOnContactLinkTest extends BaseClass {
 
@@ -20,6 +26,7 @@ public class ClickOnContactLinkTest extends BaseClass {
 	 * @throws IOException
 	 */
 	@Test(groups = "smoke")
+
 	public void clickonLink() throws EncryptedDocumentException, IOException {
 		// Created object for homepage
 		homepage = new HomePage(driver);
