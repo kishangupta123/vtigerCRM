@@ -1,245 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="16" total="25" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Organization page created]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Create Contact Look up icon]]>
-    </line>
   </reporter-output>
-  <suite started-at="2024-11-28T00:38:35 IST" name="Suite" finished-at="2024-11-28T00:42:36 IST" duration-ms="240684">
+  <suite started-at="2024-11-28T10:39:42 IST" name="Default suite" finished-at="2024-11-28T10:40:12 IST" duration-ms="29793">
     <groups>
-      <group name="regression">
-        <method signature="TC_Contacts_05_Test.createNewContactWithDropDown()[pri:0, instance:com.crm.contacts.TC_Contacts_05_Test@fbd1f6]" name="createNewContactWithDropDown" class="com.crm.contacts.TC_Contacts_05_Test"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="ClickOnContactLinkTest.clickonLink()[pri:0, instance:com.crm.contacts.ClickOnContactLinkTest@7a8c8dcf]" name="clickonLink" class="com.crm.contacts.ClickOnContactLinkTest"/>
-        <method signature="TC_Contacts_01_Test.createContact()[pri:0, instance:com.crm.contacts.TC_Contacts_01_Test@55fe41ea]" name="createContact" class="com.crm.contacts.TC_Contacts_01_Test"/>
-        <method signature="ClickOnOrganizationLinkTest.clickOnOrganizationLink()[pri:0, instance:com.crm.organisation.ClickOnOrganizationLinkTest@1ce24091]" name="clickOnOrganizationLink" class="com.crm.organisation.ClickOnOrganizationLinkTest"/>
-        <method signature="TC_Organizations_01_Test.createOrganization()[pri:0, instance:com.crm.organisation.TC_Organizations_01_Test@49438269]" name="createOrganization" class="com.crm.organisation.TC_Organizations_01_Test"/>
-      </group> <!-- smoke -->
       <group name="System">
-        <method signature="TC_Contacts_02_Test.createNewAccountWithStringDetails()[pri:0, instance:com.crm.contacts.TC_Contacts_02_Test@1c1bbc4e]" name="createNewAccountWithStringDetails" class="com.crm.contacts.TC_Contacts_02_Test"/>
-        <method signature="TC_Contacts_03_Test.createNewContactWithNumericData()[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@4b2bac3f]" name="createNewContactWithNumericData" class="com.crm.contacts.TC_Contacts_03_Test"/>
+        <method signature="TC_Contacts_03_Test.createNewContactWithNumericData()[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@1fa121e2]" name="createNewContactWithNumericData" class="com.crm.contacts.TC_Contacts_03_Test"/>
       </group> <!-- System -->
     </groups>
-    <test started-at="2024-11-28T00:38:35 IST" name="Test" finished-at="2024-11-28T00:42:36 IST" duration-ms="240684">
-      <class name="com.crm.contacts.TC_Contacts_05_Test">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.contacts.TC_Contacts_05_Test@fbd1f6]" started-at="2024-11-28T00:41:03 IST" name="launchBrowser" finished-at="2024-11-28T00:41:05 IST" duration-ms="2563" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.contacts.TC_Contacts_05_Test@fbd1f6]" started-at="2024-11-28T00:41:05 IST" name="login" finished-at="2024-11-28T00:41:10 IST" duration-ms="4795" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createNewContactWithDropDown()[pri:0, instance:com.crm.contacts.TC_Contacts_05_Test@fbd1f6]" started-at="2024-11-28T00:41:10 IST" name="createNewContactWithDropDown" finished-at="2024-11-28T00:41:28 IST" duration-ms="18037" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Clicked on Create Contact Look up icon]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- createNewContactWithDropDown -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.contacts.TC_Contacts_05_Test@fbd1f6]" started-at="2024-11-28T00:41:28 IST" name="logout" finished-at="2024-11-28T00:41:31 IST" duration-ms="2638" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.contacts.TC_Contacts_05_Test@fbd1f6]" started-at="2024-11-28T00:41:31 IST" name="closeBrowser" finished-at="2024-11-28T00:41:31 IST" duration-ms="330" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.crm.contacts.TC_Contacts_05_Test -->
-      <class name="com.crm.contacts.TC_Contacts_02_Test">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.contacts.TC_Contacts_02_Test@1c1bbc4e]" started-at="2024-11-28T00:40:04 IST" name="launchBrowser" finished-at="2024-11-28T00:40:06 IST" duration-ms="2582" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.contacts.TC_Contacts_02_Test@1c1bbc4e]" started-at="2024-11-28T00:40:06 IST" name="login" finished-at="2024-11-28T00:40:11 IST" duration-ms="4716" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createNewAccountWithStringDetails()[pri:0, instance:com.crm.contacts.TC_Contacts_02_Test@1c1bbc4e]" started-at="2024-11-28T00:40:11 IST" name="createNewAccountWithStringDetails" finished-at="2024-11-28T00:40:30 IST" duration-ms="19264" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewAccountWithStringDetails -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.contacts.TC_Contacts_02_Test@1c1bbc4e]" started-at="2024-11-28T00:40:30 IST" name="logout" finished-at="2024-11-28T00:40:33 IST" duration-ms="3175" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.contacts.TC_Contacts_02_Test@1c1bbc4e]" started-at="2024-11-28T00:40:33 IST" name="closeBrowser" finished-at="2024-11-28T00:40:34 IST" duration-ms="378" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.crm.contacts.TC_Contacts_02_Test -->
-      <class name="com.crm.organisation.TC_Organizations_01_Test">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.organisation.TC_Organizations_01_Test@49438269]" started-at="2024-11-28T00:39:06 IST" name="launchBrowser" finished-at="2024-11-28T00:39:08 IST" duration-ms="2612" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.organisation.TC_Organizations_01_Test@49438269]" started-at="2024-11-28T00:39:08 IST" name="login" finished-at="2024-11-28T00:39:13 IST" duration-ms="4963" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createOrganization()[pri:0, instance:com.crm.organisation.TC_Organizations_01_Test@49438269]" started-at="2024-11-28T00:39:13 IST" name="createOrganization" finished-at="2024-11-28T00:39:31 IST" duration-ms="17849" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Organization page created]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- createOrganization -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.organisation.TC_Organizations_01_Test@49438269]" started-at="2024-11-28T00:39:31 IST" name="logout" finished-at="2024-11-28T00:39:34 IST" duration-ms="2576" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.organisation.TC_Organizations_01_Test@49438269]" started-at="2024-11-28T00:39:34 IST" name="closeBrowser" finished-at="2024-11-28T00:39:34 IST" duration-ms="328" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.crm.organisation.TC_Organizations_01_Test -->
-      <class name="com.crm.organisation.ClickOnOrganizationLinkTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.organisation.ClickOnOrganizationLinkTest@1ce24091]" started-at="2024-11-28T00:41:31 IST" name="launchBrowser" finished-at="2024-11-28T00:41:34 IST" duration-ms="2549" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.organisation.ClickOnOrganizationLinkTest@1ce24091]" started-at="2024-11-28T00:41:34 IST" name="login" finished-at="2024-11-28T00:41:38 IST" duration-ms="4279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="clickOnOrganizationLink()[pri:0, instance:com.crm.organisation.ClickOnOrganizationLinkTest@1ce24091]" started-at="2024-11-28T00:41:38 IST" name="clickOnOrganizationLink" finished-at="2024-11-28T00:41:45 IST" duration-ms="6613" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnOrganizationLink -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.organisation.ClickOnOrganizationLinkTest@1ce24091]" started-at="2024-11-28T00:41:45 IST" name="logout" finished-at="2024-11-28T00:41:47 IST" duration-ms="2666" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.organisation.ClickOnOrganizationLinkTest@1ce24091]" started-at="2024-11-28T00:41:47 IST" name="closeBrowser" finished-at="2024-11-28T00:41:48 IST" duration-ms="296" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.crm.organisation.ClickOnOrganizationLinkTest -->
-      <class name="com.crm.organisation.TC_Organizations_02_Test">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.organisation.TC_Organizations_02_Test@ba2f4ec]" started-at="2024-11-28T00:39:34 IST" name="launchBrowser" finished-at="2024-11-28T00:39:37 IST" duration-ms="2563" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.organisation.TC_Organizations_02_Test@ba2f4ec]" started-at="2024-11-28T00:39:37 IST" name="login" finished-at="2024-11-28T00:39:42 IST" duration-ms="4959" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createNewOrganizationWithDropDown()[pri:0, instance:com.crm.organisation.TC_Organizations_02_Test@ba2f4ec]" started-at="2024-11-28T00:39:42 IST" name="createNewOrganizationWithDropDown" finished-at="2024-11-28T00:40:00 IST" duration-ms="18606" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewOrganizationWithDropDown -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.organisation.TC_Organizations_02_Test@ba2f4ec]" started-at="2024-11-28T00:40:00 IST" name="logout" finished-at="2024-11-28T00:40:03 IST" duration-ms="3020" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.organisation.TC_Organizations_02_Test@ba2f4ec]" started-at="2024-11-28T00:40:03 IST" name="closeBrowser" finished-at="2024-11-28T00:40:04 IST" duration-ms="381" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.crm.organisation.TC_Organizations_02_Test -->
-      <class name="com.crm.contacts.TC_Contacts_01_Test">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.contacts.TC_Contacts_01_Test@55fe41ea]" started-at="2024-11-28T00:40:34 IST" name="launchBrowser" finished-at="2024-11-28T00:40:37 IST" duration-ms="2703" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.contacts.TC_Contacts_01_Test@55fe41ea]" started-at="2024-11-28T00:40:37 IST" name="login" finished-at="2024-11-28T00:40:42 IST" duration-ms="5145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createContact()[pri:0, instance:com.crm.contacts.TC_Contacts_01_Test@55fe41ea]" started-at="2024-11-28T00:40:42 IST" name="createContact" finished-at="2024-11-28T00:40:59 IST" duration-ms="17777" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContact -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.contacts.TC_Contacts_01_Test@55fe41ea]" started-at="2024-11-28T00:40:59 IST" name="logout" finished-at="2024-11-28T00:41:03 IST" duration-ms="3081" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.contacts.TC_Contacts_01_Test@55fe41ea]" started-at="2024-11-28T00:41:03 IST" name="closeBrowser" finished-at="2024-11-28T00:41:03 IST" duration-ms="364" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.crm.contacts.TC_Contacts_01_Test -->
-      <class name="com.crm.contacts.TC_Contacts_04_Test">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.contacts.TC_Contacts_04_Test@5dda768f]" started-at="2024-11-28T00:41:48 IST" name="launchBrowser" finished-at="2024-11-28T00:41:50 IST" duration-ms="2425" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.contacts.TC_Contacts_04_Test@5dda768f]" started-at="2024-11-28T00:41:50 IST" name="login" finished-at="2024-11-28T00:41:55 IST" duration-ms="4563" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="handleChildWindow()[pri:0, instance:com.crm.contacts.TC_Contacts_04_Test@5dda768f]" started-at="2024-11-28T00:41:55 IST" name="handleChildWindow" finished-at="2024-11-28T00:42:14 IST" duration-ms="19605" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- handleChildWindow -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.contacts.TC_Contacts_04_Test@5dda768f]" started-at="2024-11-28T00:42:14 IST" name="logout" finished-at="2024-11-28T00:42:17 IST" duration-ms="2857" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.contacts.TC_Contacts_04_Test@5dda768f]" started-at="2024-11-28T00:42:17 IST" name="closeBrowser" finished-at="2024-11-28T00:42:17 IST" duration-ms="322" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.crm.contacts.TC_Contacts_04_Test -->
+    <test started-at="2024-11-28T10:39:42 IST" name="Default test" finished-at="2024-11-28T10:40:12 IST" duration-ms="29793">
       <class name="com.crm.contacts.TC_Contacts_03_Test">
-        <test-method is-config="true" signature="reportConfig()[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@4b2bac3f]" started-at="2024-11-28T00:38:35 IST" name="reportConfig" finished-at="2024-11-28T00:38:35 IST" duration-ms="352" status="PASS">
+        <test-method is-config="true" signature="reportConfig()[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@1fa121e2]" started-at="2024-11-28T10:39:42 IST" name="reportConfig" finished-at="2024-11-28T10:39:42 IST" duration-ms="347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportConfig -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@4b2bac3f]" started-at="2024-11-28T00:38:35 IST" name="launchBrowser" finished-at="2024-11-28T00:38:40 IST" duration-ms="4727" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@1fa121e2]" started-at="2024-11-28T10:39:42 IST" name="launchBrowser" finished-at="2024-11-28T10:39:47 IST" duration-ms="5055" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -250,56 +25,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@4b2bac3f]" started-at="2024-11-28T00:38:40 IST" name="login" finished-at="2024-11-28T00:38:45 IST" duration-ms="5140" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@1fa121e2]" started-at="2024-11-28T10:39:47 IST" name="login" finished-at="2024-11-28T10:39:52 IST" duration-ms="4400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createNewContactWithNumericData()[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@4b2bac3f]" started-at="2024-11-28T00:38:45 IST" name="createNewContactWithNumericData" finished-at="2024-11-28T00:39:03 IST" duration-ms="17359" status="PASS">
+        <test-method signature="createNewContactWithNumericData()[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@1fa121e2]" started-at="2024-11-28T10:39:52 IST" name="createNewContactWithNumericData" finished-at="2024-11-28T10:40:09 IST" duration-ms="17299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewContactWithNumericData -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@4b2bac3f]" started-at="2024-11-28T00:39:03 IST" name="logout" finished-at="2024-11-28T00:39:05 IST" duration-ms="2794" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@1fa121e2]" started-at="2024-11-28T10:40:09 IST" name="logout" finished-at="2024-11-28T10:40:11 IST" duration-ms="2498" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@4b2bac3f]" started-at="2024-11-28T00:39:05 IST" name="closeBrowser" finished-at="2024-11-28T00:39:06 IST" duration-ms="375" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@1fa121e2]" started-at="2024-11-28T10:40:11 IST" name="closeBrowser" finished-at="2024-11-28T10:40:12 IST" duration-ms="439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="reportBackUp()[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@4b2bac3f]" started-at="2024-11-28T00:42:36 IST" name="reportBackUp" finished-at="2024-11-28T00:42:37 IST" duration-ms="675" status="PASS">
+        <test-method is-config="true" signature="reportBackUp()[pri:0, instance:com.crm.contacts.TC_Contacts_03_Test@1fa121e2]" started-at="2024-11-28T10:40:12 IST" name="reportBackUp" finished-at="2024-11-28T10:40:14 IST" duration-ms="1484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportBackUp -->
       </class> <!-- com.crm.contacts.TC_Contacts_03_Test -->
-      <class name="com.crm.contacts.ClickOnContactLinkTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.crm.contacts.ClickOnContactLinkTest@7a8c8dcf]" started-at="2024-11-28T00:42:17 IST" name="launchBrowser" finished-at="2024-11-28T00:42:20 IST" duration-ms="2564" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.contacts.ClickOnContactLinkTest@7a8c8dcf]" started-at="2024-11-28T00:42:20 IST" name="login" finished-at="2024-11-28T00:42:25 IST" duration-ms="4900" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="clickonLink()[pri:0, instance:com.crm.contacts.ClickOnContactLinkTest@7a8c8dcf]" started-at="2024-11-28T00:42:25 IST" name="clickonLink" finished-at="2024-11-28T00:42:33 IST" duration-ms="8371" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickonLink -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.contacts.ClickOnContactLinkTest@7a8c8dcf]" started-at="2024-11-28T00:42:33 IST" name="logout" finished-at="2024-11-28T00:42:36 IST" duration-ms="2390" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.contacts.ClickOnContactLinkTest@7a8c8dcf]" started-at="2024-11-28T00:42:36 IST" name="closeBrowser" finished-at="2024-11-28T00:42:36 IST" duration-ms="390" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.crm.contacts.ClickOnContactLinkTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

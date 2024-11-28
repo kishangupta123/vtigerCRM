@@ -50,7 +50,9 @@ public class TC_Contacts_05_Test extends BaseClass {
 		
 		contactinfo = new ContactInfoPage(driver);
 		String captureHeader = contactinfo.captureContactHeader();
+		String leadSourceText = contactinfo.getLeadSource().getText();
 		
+		Assert.assertTrue(leadSourceText.contentEquals(leadSource), "LeadSource contains the desired selected dropdown");
 		Assert.assertTrue(captureHeader.contains(lastName), "capture header contains lastname");
 		test.log(Status.PASS, "Contact with dropdown verified");	
 	}

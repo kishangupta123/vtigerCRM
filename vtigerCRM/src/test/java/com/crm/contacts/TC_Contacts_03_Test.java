@@ -32,20 +32,21 @@ public class TC_Contacts_03_Test extends BaseClass {
 	public void createNewContactWithNumericData() throws EncryptedDocumentException, IOException {
 		String lastName = eutils.getStringDataFromExcel("ContactsTestData", 16, 3);
 
-		double assitantPhone = eutils.getNumericDataFromExcel("ContactsTestData", 17, 3);
-		String assistPhone = String.valueOf(assitantPhone);
+		// Read numeric data from Excel, then convert it to a String to avoid scientific notation
+	    double assitantPhone = eutils.getNumericDataFromExcel("ContactsTestData", 17, 3);
+	    String assistPhone = String.format("%.0f", assitantPhone); // Converts to String without decimals
 
-		double officePhone = eutils.getNumericDataFromExcel("ContactsTestData", 18, 3);
-		String offcPhone = String.valueOf(officePhone);
+	    double officePhone = eutils.getNumericDataFromExcel("ContactsTestData", 18, 3);
+	    String offcPhone = String.format("%.0f", officePhone);
 
-		double mobile = eutils.getNumericDataFromExcel("ContactsTestData", 19, 3);
-		String mob = String.valueOf(mobile);
+	    double mobile = eutils.getNumericDataFromExcel("ContactsTestData", 19, 3);
+	    String mob = String.format("%.0f", mobile);
 
-		double homePhone = eutils.getNumericDataFromExcel("ContactsTestData", 20, 3);
-		String homPhone = String.valueOf(homePhone);
-		double otherPhone = eutils.getNumericDataFromExcel("ContactsTestData", 21, 3);
-		String othPhone = String.valueOf(otherPhone);
-		test.log(Status.PASS, "Read data from excel file");
+	    double homePhone = eutils.getNumericDataFromExcel("ContactsTestData", 20, 3);
+	    String homPhone = String.format("%.0f", homePhone);
+
+	    double otherPhone = eutils.getNumericDataFromExcel("ContactsTestData", 21, 3);
+	    String othPhone = String.format("%.0f", otherPhone);
 
 		// Created an instance for HOMEPAGE
 		homepage = new HomePage(driver);
@@ -77,9 +78,13 @@ public class TC_Contacts_03_Test extends BaseClass {
 		
 		contactinfo = new ContactInfoPage(driver);
 		String captureHeader = contactinfo.captureContactHeader();
+		String assistantPhoneTextField = contactinfo.getAssistantPhone().getText();
 		
+		assistPhone = assistPhone.trim();
+	    assistantPhoneTextField = assistantPhoneTextField.trim().replaceAll("[^0-9]", "");
 		// Checking if the captured text is containing same lastname or not
 		Assert.assertTrue(captureHeader.contains(lastName), "capture header contains lastname");
+		Assert.assertTrue(assistantPhoneTextField.contentEquals(assistPhone), "Verified");
 		// Message to be printed on the extent report
 		test.log(Status.PASS, "Contact with dropdown verified");	
 	}
