@@ -10,6 +10,9 @@ public class OrganizationInfoPage {
 	@FindBy(className = "dvHeaderText")
 	private WebElement organizationHeaderText;
 	
+	@FindBy(xpath = "//td[contains(@id,'mouseArea_Industry')]")
+	private WebElement industryDropDown;
+	
 	public OrganizationInfoPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -21,7 +24,14 @@ public class OrganizationInfoPage {
 		return organizationHeaderText;
 	}
 	
-	//Business Library - Generic Method related to Project
+	/**
+	 * @return the industryDropDown
+	 */
+	public WebElement getIndustryDropDown() {
+		return industryDropDown;
+	}
+
+		//Business Library - Generic Method related to Project
 		/**
 		 * This method will capture header text and return it to caller method
 		 * @return
