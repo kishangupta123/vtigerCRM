@@ -47,6 +47,10 @@ public class ContactInfoPage {
 	@FindBy(xpath = "//td[contains(@id,'Office Phone')]")
 	private WebElement officePhone;
 	
+	@FindBy(id = "mouseArea_Birthdate")
+	private WebElement birthdate;
+	
+	
 	public ContactInfoPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -116,12 +120,20 @@ public class ContactInfoPage {
 	}
 
 	/**
+	 * @return the birthdate
+	 */
+	public WebElement getBirthdate() {
+		return birthdate;
+	}
+
+	/**
 	 * @return the officePhone
 	 */
 	public WebElement getOfficePhone() {
 		return officePhone;
 	}
 
+	
 	//Business Library - Generic Method related to Project
 	/**
 	 * This method will capture header text and return it to caller method
