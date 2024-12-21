@@ -20,6 +20,7 @@ import org.testng.annotations.Parameters;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.crm.objectRepositiory.CalendarPopUp;
 import com.crm.objectRepositiory.ContactInfoPage;
 import com.crm.objectRepositiory.ContactsPage;
 import com.crm.objectRepositiory.CreateNewContactsPage;
@@ -58,6 +59,7 @@ public class BaseClass {
 	public OrganizationPage organizationpage;
 	public ContactInfoPage contactinfo;
 	public OrganizationInfoPage organizationinfo;
+	public CalendarPopUp calendarPopUp;
 
 	@BeforeSuite
 	public void reportConfig() {
@@ -99,8 +101,8 @@ public class BaseClass {
 	@AfterMethod
 	public void logout() {
 		homepage = new HomePage(driver);
-//		wutils.mouseHoverAction(driver,homepage.getAdministratorImage());
-		homepage.getAdministratorImage().click();
+		wutils.mouseHoverAction(driver,homepage.getAdministratorImage());
+//		homepage.getAdministratorImage().click();
 		homepage.getSignoutLink().click();
 		
 	}

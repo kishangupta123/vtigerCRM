@@ -150,16 +150,16 @@ public class WebDriverUtility {
 	 * 
 	 * @param element
 	 */
-	public void mouseHoverAction(WebDriver driver2, WebElement element) {
+	public void mouseHoverAction(WebDriver driver, WebElement element) {
 		actions = new Actions(driver);
-		actions.moveToElement(element).perform();
+		actions.moveToElement(element).click().perform();
 	}
 
 	/**
 	 * This method will perform right click action any where on the web page
 	 * 
 	 */
-	public void rightClickAtAnyWhereAction() {
+	public void rightClickAtAnyWhereAction(WebDriver driver) {
 		actions = new Actions(driver);
 		actions.contextClick().perform();
 	}
