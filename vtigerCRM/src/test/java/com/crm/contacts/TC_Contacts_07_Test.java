@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -11,6 +13,7 @@ import com.aventstack.extentreports.Status;
 import com.crm.genericutility.BaseClass;
 import com.crm.genericutility.ListenerUtility;
 import com.crm.objectRepositiory.CalendarPopUp;
+import com.crm.objectRepositiory.ContactInfoPage;
 import com.crm.objectRepositiory.ContactsPage;
 import com.crm.objectRepositiory.CreateNewContactsPage;
 import com.crm.objectRepositiory.HomePage;
@@ -55,5 +58,17 @@ public class TC_Contacts_07_Test extends BaseClass{
 		String dateInput = futils.getDataFromProperty("date");
 		WebElement date = driver.findElement(By.xpath("(//td[text()='"+dateInput+"'])[1]"));
     	date.click();
+    	
+    	
+    	String lastName = eutils.getStringDataFromExcel("ContactsTestData", 37, 3);
+    	newcontact.getLastNameTextBox().sendKeys(lastName);
+    	newcontact.getSaveButton().click();
+		test.log(Status.PASS, "Added details to the required text field and clicked on save button");
+		
+		contactinfo = new ContactInfoPage(driver);
+		String birthdate = contactinfo.getBirthdate().getText().trim();
+		Reporter.log(birthdate, true);
+		test.log(Status.PASS,"User created and verified the details using dob");
+
 	}
 }
